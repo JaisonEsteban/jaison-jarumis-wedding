@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#f4f0e9">
+  <title>La boda de Jaison y Jarumis</title>
+  <meta name="description" content="Invitación a la boda de Jaison y Jarumis — 17 de octubre de 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233f5425'/%3E%3Cpath d='M18 24c0-8 11-10 14-2 3-8 14-6 14 2 0 9-14 18-14 18S18 33 18 24Z' fill='%23fff'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --paper: #fffefa;
+      --paper-soft: #f7f3ec;
+      --ink: #1f251f;
+      --muted: #676b63;
+      --olive: #3f5425;
+      --olive-dark: #2f401b;
+      --gold: #a98a5c;
+      --line: #ded8cd;
+      --shadow: 0 24px 70px rgba(47, 42, 35, .13);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(169,138,92,.12), transparent 28rem),
+        radial-gradient(circle at 90% 40%, rgba(63,84,37,.09), transparent 30rem),
+        #efeee9;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .page { width: min(100% - 28px, 760px); margin: 28px auto 120px; }
+    .card {
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid rgba(111, 101, 87, .18);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero { position: relative; background: var(--paper-soft); }
+    .photo-wrap {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      background: linear-gradient(145deg, #c9c0b2, #eee7dc);
+    }
+    .photo-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .photo-fallback {
+      position: absolute; inset: 0; display: grid; place-content: center; gap: 8px;
+      padding: 32px; text-align: center; color: #5d584f;
+    }
+    .photo-fallback strong { font-family: "Cormorant Garamond", serif; font-size: 2rem; }
+    .photo-fallback span { font-size: .84rem; letter-spacing: .08em; text-transform: uppercase; }
+
+    .invitation {
+      position: relative;
+      padding: clamp(38px, 8vw, 72px) 24px 48px;
+      text-align: center;
+      background:
+        linear-gradient(rgba(255,254,250,.96), rgba(255,254,250,.96)),
+        repeating-linear-gradient(0deg, transparent, transparent 4px, rgba(90,80,65,.035) 5px);
+    }
+    .invitation::before {
+      content: ""; display: block; width: 62px; height: 1px; margin: 0 auto 28px;
+      background: var(--gold);
+    }
+    .eyebrow { margin: 0 0 18px; font-size: .72rem; letter-spacing: .32em; text-transform: uppercase; }
+    h1, h2 { font-family: "Cormorant Garamond", serif; }
+    h1 { margin: 0; font-size: clamp(3rem, 11vw, 5.4rem); font-weight: 400; line-height: .9; }
+    h1 span { display: block; }
+    h1 em { display: block; margin: 9px 0; color: var(--gold); font-size: .48em; font-weight: 400; }
+    .date-script { margin: 28px 0 0; font-family: "Cormorant Garamond", serif; font-size: 1.2rem; letter-spacing: .12em; }
+
+    .countdown { display: grid; grid-template-columns: repeat(4, 1fr); border-block: 1px solid var(--line); background: #fff; }
+    .count-unit { padding: 22px 4px; text-align: center; }
+    .count-unit + .count-unit { border-left: 1px solid var(--line); }
+    .count-unit strong { display: block; color: var(--olive); font-family: "Cormorant Garamond", serif; font-size: 2rem; line-height: 1; }
+    .count-unit span { display: block; margin-top: 7px; color: var(--muted); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; }
+
+    .content { padding: clamp(30px, 7vw, 56px); }
+    .section + .section { margin-top: 46px; padding-top: 42px; border-top: 1px solid var(--line); }
+    h2 { margin: 0 0 24px; color: var(--olive); font-size: clamp(2rem, 7vw, 2.8rem); font-weight: 500; line-height: 1.1; text-align: center; }
+    .details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .label { margin-bottom: 6px; color: var(--gold); font-size: .72rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+    .value { margin: 0; font-size: 1rem; }
+    .value strong { font-weight: 600; }
+    .note { max-width: 610px; margin: 0 auto; text-align: center; }
+    .note p { margin: 0 0 18px; }
+    .note .lead { font-family: "Cormorant Garamond", serif; font-size: 1.45rem; }
+
+    .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 28px; }
+    .button {
+      min-width: 190px; padding: 13px 20px; border: 1px solid var(--olive); border-radius: 999px;
+      background: var(--olive); color: white; font-size: .88rem; font-weight: 600; text-align: center;
+      text-decoration: none; transition: transform .2s ease, background .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); background: var(--olive-dark); }
+    .button.secondary { background: transparent; color: var(--olive); }
+
+    .contribution { padding: 22px; border-radius: 16px; background: var(--paper-soft); text-align: center; }
+    .payment-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 14px; }
+    .payment { padding: 9px 14px; border: 1px solid var(--line); border-radius: 10px; background: white; font-size: .9rem; }
+
+    .rsvp-shell { min-height: 720px; overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: #fff; }
+    .rsvp-shell iframe { display: block; width: 100%; height: 720px; border: 0; }
+    .rsvp-setup { display: none; padding: 42px 24px; text-align: center; }
+    .rsvp-setup p { max-width: 480px; margin: 0 auto 18px; color: var(--muted); }
+    .fallback-link { margin-top: 18px; text-align: center; font-size: .9rem; }
+
+    footer { padding: 30px 20px; color: var(--muted); text-align: center; font-family: "Cormorant Garamond", serif; font-size: 1.25rem; }
+
+    @media (max-width: 620px) {
+      body { background: var(--paper); }
+      .page { width: 100%; margin: 0; }
+      .card { border: 0; border-radius: 0; box-shadow: none; }
+      .details-grid { grid-template-columns: 1fr; gap: 24px; }
+      .content { padding-inline: 22px; }
+      .button { width: 100%; }
+      .count-unit strong { font-size: 1.65rem; }
+      .count-unit span { font-size: .58rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .button { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <article class="card">
+      <header class="hero">
+        <div class="photo-wrap">
+          <img id="couple-photo" src="assets/couple-photo.jpg" alt="Jaison y Jarumis" onerror="this.hidden=true; document.getElementById('photo-fallback').hidden=false;">
+          <div class="photo-fallback" id="photo-fallback" hidden>
+            <strong>Su foto irá aquí</strong>
+            <span>Reemplace assets/couple-photo.jpg</span>
+          </div>
+        </div>
+        <div class="invitation">
+          <p class="eyebrow">Estás invitado a la boda de</p>
+          <h1><span>Jaison Esteban</span><em>y</em><span>Jarumis Jimenez</span></h1>
+          <p class="date-script">17 de octubre de 2026 · 4:30 PM</p>
+        </div>
+      </header>
+
+      <section class="countdown" aria-label="Cuenta regresiva para la boda">
+        <div class="count-unit"><strong id="days">0</strong><span>Días</span></div>
+        <div class="count-unit"><strong id="hours">0</strong><span>Horas</span></div>
+        <div class="count-unit"><strong id="minutes">0</strong><span>Minutos</span></div>
+        <div class="count-unit"><strong id="seconds">0</strong><span>Segundos</span></div>
+      </section>
+
+      <div class="content">
+        <section class="section" aria-labelledby="detalles">
+          <h2 id="detalles">Detalles de la celebración</h2>
+          <div class="details-grid">
+            <div>
+              <div class="label">Fecha y hora</div>
+              <p class="value"><strong>Sábado, 17 de octubre de 2026</strong><br>4:30 PM · Hora del Este</p>
+            </div>
+            <div>
+              <div class="label">Ubicación</div>
+              <p class="value"><strong>1931 NW 129th St</strong><br>Miami, FL 33167</p>
+            </div>
+            <div>
+              <div class="label">Código de vestimenta</div>
+              <p class="value"><strong>Vestimenta elegante formal</strong><br>El blanco es territorio exclusivo de la novia.</p>
+            </div>
+            <div>
+              <div class="label">Parqueo</div>
+              <p class="value">Puede parquearse al frente de la vivienda.</p>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=1931+NW+129th+St+Miami+FL+33167" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+            <a class="button secondary" href="tel:+17864546628">Llamar a los anfitriones</a>
+          </div>
+        </section>
+
+        <section class="section note" aria-labelledby="nota">
+          <h2 id="nota">Una nota de nosotros</h2>
+          <p class="lead">Su presencia es el mejor regalo que podríamos recibir.</p>
+          <p>Si desean obsequiarnos un detalle, agradeceremos de corazón cualquier gesto de cariño que deseen compartir con nosotros en este día tan especial.</p>
+          <p>Gracias por celebrar nuestro amor y ser parte de este hermoso momento. 🤍</p>
+        </section>
+
+        <section class="section" aria-labelledby="contacto">
+          <h2 id="contacto">Información</h2>
+          <div class="contribution">
+            <div class="label">Anfitriones</div>
+            <p class="value"><strong>Jarumis Jimenez &amp; Jaison Esteban</strong><br><a href="tel:+17864546628">(786) 454-6628</a></p>
+            <div class="payment-list" aria-label="Opciones de aporte">
+              <span class="payment">Zelle · (786) 454-6628</span>
+              <span class="payment">Cash App · $Jarumisj</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="rsvp" aria-labelledby="rsvp-heading">
+          <h2 id="rsvp-heading">Confirma tu asistencia</h2>
+          <div class="rsvp-shell">
+            <iframe id="rsvp-frame" title="Formulario para confirmar asistencia" loading="lazy">Cargando…</iframe>
+            <div class="rsvp-setup" id="rsvp-setup">
+              <p>El formulario de confirmación estará disponible pronto.</p>
+            </div>
+          </div>
+          <p class="fallback-link" id="fallback-wrap" hidden>Si el formulario no aparece, <a id="fallback-link" target="_blank" rel="noopener noreferrer">ábrelo en una nueva ventana</a>.</p>
+        </section>
+      </div>
+
+      <footer>Con amor, Jaison &amp; Jarumis</footer>
+    </article>
+  </main>
+
+  <script>
+    // EDITAR: pegue aquí el enlace EMBED de Google Forms.
+    const GOOGLE_FORM_EMBED_URL = "PASTE_GOOGLE_FORM_EMBED_URL_HERE";
+    const WEDDING_DATE = "2026-10-17T16:30:00-04:00"; // Miami (EDT)
+
+    const formFrame = document.getElementById("rsvp-frame");
+    const formSetup = document.getElementById("rsvp-setup");
+    const fallbackWrap = document.getElementById("fallback-wrap");
+    const fallbackLink = document.getElementById("fallback-link");
+
+    if (GOOGLE_FORM_EMBED_URL.startsWith("https://docs.google.com/forms/")) {
+      formFrame.src = GOOGLE_FORM_EMBED_URL;
+      fallbackLink.href = GOOGLE_FORM_EMBED_URL.replace("?embedded=true", "");
+      fallbackWrap.hidden = false;
+    } else {
+      formFrame.hidden = true;
+      formSetup.style.display = "block";
+    }
+
+    const targetDate = new Date(WEDDING_DATE).getTime();
+    const countdownIds = ["days", "hours", "minutes", "seconds"];
+
+    function updateCountdown() {
+      const diff = targetDate - Date.now();
+      if (diff <= 0) {
+        countdownIds.forEach((id) => { document.getElementById(id).textContent = "0"; });
+        return;
+      }
+      const values = [
+        Math.floor(diff / 86400000),
+        Math.floor((diff % 86400000) / 3600000),
+        Math.floor((diff % 3600000) / 60000),
+        Math.floor((diff % 60000) / 1000)
+      ];
+      countdownIds.forEach((id, index) => {
+        document.getElementById(id).textContent = String(values[index]).padStart(2, "0");
+      });
+    }
+
+    updateCountdown();
+    window.setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
